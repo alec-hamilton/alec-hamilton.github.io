@@ -7,9 +7,43 @@
 
 body {
   padding: 0;
+  margin: 0;
 }
 
 img {
   width: 100%;
   height: auto;
+}
+
+.menu {
+  display:  flex;
+  color: #ffffff;
+  margin: 0;
+  padding: 0 1rem 0 0;
+  align-items: center;
+  justify-content: flex-end;
+  font-family: 'Roboto Mono', monospace;
+  gap: 1rem;
+}
+
+.menu a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #292c43;
+  margin: 0;
+  positon: fixed;
+}
+
+.logo {
+  width: 150px;
+  padding: 1rem;
+}
+
+.hamburger {
+  display: none;
 }
