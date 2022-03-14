@@ -146,3 +146,20 @@ i {
 .clickable-icon {
   color: #ffffff;
 }
+
+.icon-footer {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.footer-text a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-text {
+  text-align: center;
+  padding-bottom: 1rem;
+}
