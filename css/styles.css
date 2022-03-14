@@ -41,6 +41,10 @@ img {
   text-decoration: none;
 }
 
+.menu-link:hover {
+  color: #var(--secondary);
+}
+
 .top-nav {
 }
 
@@ -72,13 +76,13 @@ nav {
 
 .welcome-name {
   color: #ffffff;
-  font-size: 2.5rem;
+  font-size: 6vw;
   font-weight: 700;
 }
 
 .welcome-sub {
   color: #ffffff;
-  font-size: 2rem;
+  font-size: 5.5vw;
 }
 
 .button {
@@ -129,6 +133,8 @@ h2 {
 
 .my-work-container {
   padding: 3rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .my-work-card {
@@ -190,4 +196,39 @@ i {
 
 #contact-copy{
   text-align: center;
+}
+
+@media only screen and (min-width: 700px){
+  /*body {
+    background-color: #8fa5ff;
+  }*/
+
+  .welcome-name {
+    font-size: 42px;
+  }
+
+  .welcome-sub {
+    font-size: 38px;
+  }
+
+  .welcome-container {
+    width: 696px;
+    margin: 0 auto;
+  }
+
+  .about-container {
+    width: 696px;
+    margin: 0 auto;
+  }
+
+  .my-work-container{
+    width: 696px;
+    margin: 0 auto;
+  }
+
+  .contact-container {
+    width: 696px;
+    margin: 0 auto;
+  }
+
 }
