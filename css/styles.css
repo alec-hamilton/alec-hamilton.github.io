@@ -41,6 +41,9 @@ img {
   text-decoration: none;
 }
 
+.top-nav {
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -86,6 +89,11 @@ nav {
   color: var(--primary);
   border-radius: 4px;
   font-family: 'Roboto Mono', monospace;
+}
+
+.button:hover {
+  background-color: #e8827340;
+  cursor: pointer;
 }
 
 .body-copy {
@@ -162,4 +170,24 @@ i {
 .footer-text {
   text-align: center;
   padding-bottom: 1rem;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  gap: 1rem;
+  align-items: center;
+}
+
+.contact-sub {
+  color: #ffffff;
+  font-size: 2rem;
+}
+
+#contact-copy{
+  text-align: center;
 }
