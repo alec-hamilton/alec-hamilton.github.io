@@ -114,3 +114,35 @@ h1 {
   font-size: 1.5rem;
   padding-right: 0.5rem;
 }
+
+h2 {
+  font-size: 1.2rem;
+}
+
+.my-work-container {
+  padding: 3rem;
+}
+
+.my-work-card {
+  background-color: var(--primary);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.my-work-card ul {
+  display: flex;
+  list-style: none;
+  font-family: 'Roboto Mono', monospace;
+  padding: 0;
+  gap: 1rem;
+  flex-wrap: wrap;
+  font-size: 0.8rem;
+}
+
+i {
+  font-size: 1.5rem;
+}
+
+.clickable-icon {
+  color: #ffffff;
+}
