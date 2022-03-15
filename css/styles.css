@@ -7,7 +7,6 @@
   --secondary: #ffb765;
 }
 
-
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -33,6 +32,7 @@ img {
   align-items: center;
   justify-content: flex-end;
   font-family: 'Roboto Mono', monospace;
+  font-weight: 300;
   gap: 1rem;
 }
 
@@ -42,7 +42,7 @@ img {
 }
 
 .menu-link:hover {
-  color: #var(--secondary);
+  color: var(--secondary);
 }
 
 .top-nav {
@@ -72,6 +72,7 @@ nav {
 .intro {
   color: var(--primary);
   font-family: 'Roboto Mono', monospace;
+  font-weight: 300;
 }
 
 .welcome-name {
@@ -93,6 +94,7 @@ nav {
   color: var(--primary);
   border-radius: 4px;
   font-family: 'Roboto Mono', monospace;
+  font-weight: 300;
 }
 
 .button:hover {
@@ -147,6 +149,7 @@ h2 {
   display: flex;
   list-style: none;
   font-family: 'Roboto Mono', monospace;
+  font-weight: 300;
   padding: 0;
   gap: 1rem;
   flex-wrap: wrap;
