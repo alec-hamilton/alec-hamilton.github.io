@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
+
+:root {
+  --bg: #292c43;
+  --primary: #e88273;
+  --secondary: #ffb765;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--bg);
+  font-family: 'Nunito Sans', sans-serif;
+  color:  #ffffff;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.menu {
+  display:  flex;
+  color: #ffffff;
+  margin: 0;
+  padding: 0 2rem 0 0;
+  align-items: center;
+  justify-content: flex-end;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 300;
+  gap: 1rem;
+}
+
+.menu a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.menu-link:hover {
+  color: var(--secondary);
+}
+
+.top-nav {
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--bg);
+  margin: 0;
+  positon: fixed;
+  border-bottom: 2px solid var(--primary);
+}
+
+.logo {
+  width: 150px;
+  padding: 1rem;
+}
+
+.welcome-container {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  gap: 1rem;
+}
+
+.intro {
+  color: var(--primary);
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 300;
+}
+
+.welcome-name {
+  color: #ffffff;
+  font-size: 6vw;
+  font-weight: 700;
+}
+
+.welcome-sub {
+  color: #ffffff;
+  font-size: 5.5vw;
+}
+
+.button {
+  border: 1px solid var(--primary);
+  padding: 1rem;
+  width: 12rem;
+  background-color: var(--bg);
+  color: var(--primary);
+  border-radius: 4px;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 300;
+}
+
+.button:hover {
+  background-color: #e8827340;
+  cursor: pointer;
+}
+
+.body-copy {
+  line-height: 1.5rem;
+}
+
+.about-container {
+  padding: 3rem;
+}
+
+.title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.horizontal-line {
+  flex-grow: 1;
+}
+
+hr {
+  border-top: 1px solid #ffffff;
+}
+
+h1 {
+  font-size: 1.5rem;
+  padding-right: 0.5rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+}
+
+.my-work-container {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.my-work-card {
+  background-color: var(--primary);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.my-work-card ul {
+  display: flex;
+  list-style: none;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 300;
+  padding: 0;
+  gap: 1rem;
+  flex-wrap: wrap;
+  font-size: 0.8rem;
+}
+
+i {
+  font-size: 1.5rem;
+}
+
+.clickable-icon {
+  color: #ffffff;
+}
+
+.icon-footer {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.footer-text a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-text {
+  text-align: center;
+  padding-bottom: 1rem;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  gap: 1rem;
+  align-items: center;
+}
+
+.contact-sub {
+  color: #ffffff;
+  font-size: 2rem;
+}
+
+#contact-copy{
+  text-align: center;
+}
+
+@media only screen and (min-width: 700px){
+  /*body {
+    background-color: #8fa5ff;
+  }*/
+
+  .welcome-name {
+    font-size: 42px;
+  }
+
+  .welcome-sub {
+    font-size: 38px;
+  }
+
+  .welcome-container {
+    width: 696px;
+    margin: 0 auto;
+  }
+
+  .about-container {
+    width: 696px;
+    margin: 0 auto;
+  }
+
+  .my-work-container{
+    width: 696px;
+    margin: 0 auto;
+  }
+
+  .contact-container {
+    width: 696px;
+    margin: 0 auto;
+  }
+
+}
