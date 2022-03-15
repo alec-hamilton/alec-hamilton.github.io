@@ -46,12 +46,12 @@ img {
   color: var(--primary);
 }
 
-.top-nav {
-}
-
 nav {
   position: sticky; /* doesn't work atm */
+  top: 0;
+  z-index: 99;
 }
+
 
 .nav {
   display: flex;
@@ -59,7 +59,8 @@ nav {
   background-color: var(--bg);
   margin: 0;
   positon: fixed;
-  border-bottom: 1px solid var(--primary);
+  /*border-bottom: 1px solid var(--primary);*/
+  box-shadow: 0 3px 5px #00000020 ;
 }
 
 .logo {
@@ -103,6 +104,10 @@ nav {
   transition: 0.3s;
 }
 
+.welcome-container a {
+  align-self: flex-start;
+}
+
 .button:hover {
   background-color: #e8827340;
   cursor: pointer;
@@ -119,6 +124,16 @@ nav {
 .about-container {
   padding: 0 3rem;
 }
+
+.ah-portrait {
+  box-shadow: 10px 10px 0 -3px var(--bg), 10px 10px var(--primary);
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.ah-portrait:hover {
+  box-shadow: 6px 6px 0 -3px var(--bg), 6px 6px var(--primary);
+  }
 
 .title-container {
   display: flex;
@@ -157,6 +172,7 @@ h2 {
   margin-bottom: 2rem;
   border-radius: 2px;
   transition: 0.3s;
+  box-shadow: 0 0 5px 5px #00000030;
 }
 
 .my-work-card:hover {
@@ -200,6 +216,7 @@ i {
 .clickable-icon-footer:hover {
   cursor: pointer;
   color: var(--primary);
+  transform: translateY(-3px);
 }
 
 .icon-footer {
@@ -238,6 +255,7 @@ i {
 .contact-sub {
   color: #ffffff;
   font-size: 2rem;
+  font-weight: 700;
 }
 
 #contact-copy{
