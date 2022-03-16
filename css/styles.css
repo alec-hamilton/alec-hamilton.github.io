@@ -16,7 +16,7 @@ body {
   margin: 0;
   background-color: var(--bg);
   font-family: 'Nunito Sans', sans-serif;
-  color:  #ffffff;
+  color: #ffffff;
 }
 
 img {
@@ -52,14 +52,12 @@ nav {
   z-index: 99;
 }
 
-
 .nav {
   display: flex;
   justify-content: space-between;
   background-color: var(--bg);
   margin: 0;
   positon: fixed;
-  /*border-bottom: 1px solid var(--primary);*/
   box-shadow: 0 3px 5px #00000020 ;
 }
 
@@ -282,7 +280,7 @@ i {
   font-weight: 700;
 }
 
-#contact-copy{
+#contact-copy {
   text-align: center;
 }
 
@@ -295,9 +293,6 @@ i {
 }
 
 @media only screen and (min-width: 700px){
-  /*body {
-    background-color: #8fa5ff;
-  }*/
 
   .welcome-name {
     font-size: 42px;
@@ -331,7 +326,7 @@ i {
     grid-column: 1 / 3;
   }
 
-  .my-work-container{
+  .my-work-container {
     width: 696px;
     margin: 0 auto;
   }
@@ -364,12 +359,8 @@ i {
     font-size: 58px;
   }
 
-  .welcome-container{
+  .welcome-container {
     width: 800px;
-  }
-
-  .empty-box {
-    width: 85%; /* sizing weird */
   }
 
   .about-container {
