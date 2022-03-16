@@ -125,6 +125,30 @@ nav {
   padding: 0 3rem;
 }
 
+p a {
+  text-decoration: none;
+  color: var(--primary);
+  transition: 0.3s;
+  position: relative;
+}
+
+p a:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--primary);
+  visibility: hidden;
+  transition: all 0.3s;
+}
+
+p a:hover:before {
+  visibility: visible;
+  width: 100%;
+}
+
 .ah-portrait {
   box-shadow: 10px 10px 0 -3px var(--bg), 10px 10px var(--primary);
   border-radius: 4px;
@@ -408,7 +432,6 @@ i {
 
   .right-email {
     writing-mode: vertical-lr;
-    padding-bottom: 1rem;
     font-family: 'Roboto Mono', monospace;
     font-size: 0.8rem;
     font-weight: 300;
