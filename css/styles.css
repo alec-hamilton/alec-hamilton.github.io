@@ -25,7 +25,7 @@ img {
 }
 
 .menu {
-  display:  flex;
+  display: flex;
   color: #ffffff;
   margin: 0;
   padding: 0 2rem 0 0;
@@ -47,7 +47,7 @@ img {
 }
 
 nav {
-  position: sticky; /* doesn't work atm */
+  position: sticky;
   top: 0;
   z-index: 99;
 }
