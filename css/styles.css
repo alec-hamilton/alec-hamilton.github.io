@@ -178,7 +178,7 @@ p a:hover:before {
 
 .ah-portrait:hover {
   box-shadow: 6px 6px 0 -3px var(--bg), 6px 6px var(--primary);
-  }
+}
 
 .title-container {
   display: flex;
@@ -229,6 +229,11 @@ h3 {
 
 .project-image {
   margin-bottom: 1rem;
+  border: 3px solid var(--primary);
+  border-radius: 2px;
+  font-size: 0;
+  box-shadow: 0 0 5px 0 #00000030;
+  transition: 0.3s;
 }
 
 .language-list {
@@ -280,7 +285,6 @@ i, i::before {
 }
 
 .clickable-icon:hover {
-  /*color: var(--bg);*/
   transform: translateY(-3px);
 }
 
