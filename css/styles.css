@@ -57,7 +57,6 @@ nav {
   justify-content: space-between;
   background-color: var(--bg);
   margin: 0;
-  positon: fixed;
   box-shadow: 0 3px 5px #00000020 ;
 }
 
@@ -147,6 +146,30 @@ p a:hover:before {
   width: 100%;
 }
 
+.card-copy a {
+  text-decoration: none;
+  color: var(--primary);
+  transition: 0.3s;
+  position: relative;
+}
+
+.card-copy a:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--primary);
+  visibility: hidden;
+  transition: all 0.3s;
+}
+
+.card-copy a:hover:before {
+  visibility: visible;
+  width: 100%;
+}
+
 .ah-portrait {
   box-shadow: 10px 10px 0 -3px var(--bg), 10px 10px var(--primary);
   border-radius: 4px;
@@ -155,7 +178,7 @@ p a:hover:before {
 
 .ah-portrait:hover {
   box-shadow: 6px 6px 0 -3px var(--bg), 6px 6px var(--primary);
-  }
+}
 
 .title-container {
   display: flex;
@@ -180,6 +203,11 @@ h1 {
 h2 {
   font-size: 1.2rem;
   color: #ffffff;
+  margin-top: 0;
+}
+
+h3 {
+  font-size: 1.1rem;
 }
 
 .my-work-container {
@@ -189,6 +217,8 @@ h2 {
 }
 
 .my-work-card {
+  display: flex;
+  flex-direction: column;
   background-color: var(--secondary);
   padding: 2rem;
   margin-bottom: 2rem;
@@ -197,16 +227,45 @@ h2 {
   box-shadow: 0 0 5px 5px #00000030;
 }
 
-.my-work-card:hover {
-  transform: translateY(-7px);
+.project-title {
+  display: flex;
+  justify-content: space-between;
 }
 
-.my-work-card ul {
+.project-title .clickable-icon {
+  margin: 0;
+}
+
+.project-image {
+  margin-bottom: 1rem;
+  border: 3px solid var(--primary);
+  border-radius: 2px;
+  font-size: 0;
+  box-shadow: 0 0 5px 0 #00000030;
+  transition: 0.3s;
+}
+
+.language-list {
   display: flex;
   list-style: none;
   font-family: 'Roboto Mono', monospace;
   font-weight: 300;
   padding: 0;
+  margin: 0;
+  gap: 1rem;
+  flex-wrap: wrap;
+  font-size: 0.8rem;
+  color: #ffffff;
+}
+
+.competency-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 300;
+  padding: 0;
+  margin: 0;
   gap: 1rem;
   flex-wrap: wrap;
   font-size: 0.8rem;
@@ -215,19 +274,28 @@ h2 {
 
 .card-copy {
   color: #ffffff;
+  flex-grow: 1;
+  margin: 0;
 }
 
-i {
+i, i::before {
   font-size: 1.5rem;
+  width: 1.5rem;
+}
+
+.project-icons {
+  display: flex;
+  column-gap: 0.6rem;
 }
 
 .clickable-icon {
   color: #ffffff;
   transition: 0.3s;
+  margin: 2rem 1rem 0 0;
 }
 
 .clickable-icon:hover {
-  color: var(--primary);
+  transform: translateY(-3px);
 }
 
 .clickable-icon-footer {
