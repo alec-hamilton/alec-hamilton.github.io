@@ -227,6 +227,15 @@ h3 {
   box-shadow: 0 0 5px 5px #00000030;
 }
 
+.project-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-title .clickable-icon {
+  margin: 0;
+}
+
 .project-image {
   margin-bottom: 1rem;
   border: 3px solid var(--primary);
@@ -276,6 +285,7 @@ i, i::before {
 
 .project-icons {
   display: flex;
+  column-gap: 0.6rem;
 }
 
 .clickable-icon {
