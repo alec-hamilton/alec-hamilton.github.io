@@ -404,26 +404,15 @@ i, i::before {
     margin: 0 auto;
   }
 
-  .card-copy {
-    padding-left: 0.5rem;
-  }
-
-  .card-body {
+  .card-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 2rem;
-  }
-
-  .language-list {
-    margin-bottom: 1rem;
-  }
-
-  h3 {
-    margin-top: 0;
+    column-gap: 1rem;
+    grid-row-gap: 1rem;
   }
 
   .my-work-card {
-    margin-bottom: 1rem;
+    margin-bottom: 0;
   }
 
 }
