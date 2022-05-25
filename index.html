@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Alec Hamilton</title>
     <script src="https://unpkg.com/feather-icons"></script>
+    <script src="js/script.js" defer></script>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
 </head>
@@ -15,7 +16,7 @@
 <nav>
     <div class="nav">
         <div>
-            <a href="#home"><img class="logo" src="images/ah-logo-1.png" alt=""></a>
+            <a href="#"><img class="logo" src="images/ah-logo-1.png" alt=""></a>
         </div>
         <div class="menu">
             <a class="menu-link" href="#about-me">About me</a>
@@ -25,7 +26,7 @@
     </div>
 </nav>
 
-<div class="body-container" id="home">
+<div class="body-container">
     <div class="site-body">
 
         <section class="welcome-container">
@@ -36,11 +37,14 @@
                 Alec Hamilton.
             </div>
             <div class="welcome-sub">
-                I build things for the web.
+                I'm a full stack developer.
             </div>
             <div class="body-copy-container">
                 <p class="body-copy">
-                    I'm a Trainee Full Stack Develop at <a target="_blank" href="https://io-academy.uk/courses/full-stack-track/">iO Academy.</a> Having worked as a Digital Designer for the last 5 years, I'm excited to be making the switch to the world of development.
+                    I'm a Trainee Full Stack Developer at
+                    <a target="_blank" href="https://io-academy.uk/courses/full-stack-track/">iO Academy.</a>
+                    Having worked as a Digital Designer for the last 5 years, I'm excited to be making the
+                    switch to the world of development.
                 </p>
             </div>
             <button onclick="window.location.href='#my-work';" class="button" id="about-me">View my work</button>
@@ -55,7 +59,14 @@
             </div>
             <div class="about-copy-container">
                 <p class="body-copy about-grid">
-                    I’m Alec and I was a designer for 5 years. Having worked alongside developers for most of my career I’ve decided to cross the divide and enter the world of development. As a creative, I have worked both in-house and client facing, with a diverse set of transferable skills in UX/UI, graphic and industrial design. I’m a creative problem solver who’s looking forward to applying the  skills I’ve developed in the past and the new skills I’ve learned at <a href="https://io-academy.uk/courses/full-stack-track/">iO Academy</a>, in industry very soon.
+                    I'm Alec and I'm currently studying on the Full Stack Track course at
+                    <a href="https://io-academy.uk/courses/full-stack-track/">iO Academy.</a>
+                    I’m a creative and conscientious full stack developer with a background in digital design.
+                    As a designer, I have worked both in-house and client facing, with a diverse set of
+                    transferable skills in UX/UI, graphic and industrial design. I’m passionate about electronic
+                    music and have a monthly radio show. At the weekends, you can probably find me exploring the
+                    countryside with my camera. I’m open, collaborative and have a fondness to make a positive
+                    impact on the world through the work that I do.
                 </p>
                 <img class="ah-portrait" src="images/ah-portrait-sq-1.png" alt="">
             </div>
@@ -73,16 +84,84 @@
             <div class="card-container">
                 <div class="my-work-card">
                     <div class="project-title">
+                        <h2>CarPe Diem</h2>
+                        <div class="project-icons">
+                            <a class="clickable-icon" target="_blank"
+                               href="https://github.com/iO-Academy/2022-mar-carcollection"><i data-feather="github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <img src="images/carpe-diem.png" alt="">
+                    </div>
+                    <p class="card-copy">
+                        CarPe-Diem is an object-oriented PHP project that follows SOLID principles and is
+                        styled with SASS. It fetches and displays information about different cars from a
+                        MySQL database and employs unit testing. The database is built and populated using
+                        a utility tool that curls the data from an existing API. I worked on the utility tool
+                        as well as filtering by make and/or colour of car.
+                    </p>
+                    <h3>Languages / Libraries</h3>
+                    <ul class="language-list">
+                        <li>PHP</li>
+                        <li>SASS</li>
+                        <li>SQL</li>
+                        <li>HTML</li>
+                    </ul>
+                    <h3>Competencies</h3>
+                    <ul class="competency-list">
+                        <li>- OOP</li>
+                        <li>- Unit testing</li>
+                        <li>- SOLID principles</li>
+                    </ul>
+                </div>
+                <div class="my-work-card">
+                    <div class="project-title">
+                        <h2>Scran Master</h2>
+                        <div class="project-icons">
+                            <a class="clickable-icon" target="_blank"
+                               href="https://github.com/iO-Academy/2022-mar-scranmaster"><i
+                                    data-feather="github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <img src="images/scranmaster.png" alt="">
+                    </div>
+                    <p class="card-copy">
+                        Scran Master is a React and Bootstrap based web-app for ordering takeaways online. It
+                        fetches Restaurant data from an API. You can add and remove items from your order as well as
+                        simulate placing it, where the server will respond with an estimated delivery time. I worked on
+                        populating the place order section when someone adds or removes an item.
+                        I was also the Scrum Master for this project. </p>
+                    <h3>Languages / Libraries</h3>
+                    <ul class="language-list">
+                        <li>React</li>
+                        <li>JavaScript</li>
+                        <li>HTML</li>
+                        <li>Bootstrap</li>
+                    </ul>
+                    <h3>Competencies</h3>
+                    <ul class="competency-list">
+                        <li>- APIs</li>
+                        <li>- Libraries</li>
+                        <li>- Postman</li>
+                    </ul>
+                </div>
+                <div class="my-work-card">
+                    <div class="project-title">
                         <h2>Record Collection</h2>
                         <div class="project-icons">
-                            <a class="clickable-icon" target="_blank" href="https://github.com/alec-hamilton/collector-app"><i data-feather="github"></i></a>
+                            <a class="clickable-icon" target="_blank"
+                               href="https://github.com/alec-hamilton/collector-app"><i data-feather="github"></i></a>
                         </div>
                     </div>
                     <div class="project-image">
                         <img src="images/homepage.png" alt="">
                     </div>
                     <p class="card-copy">
-                        Alec's Record Collection is a fully responsive PHP web-app that displays a collection of records stored in a MySQL database. You can add a new record, including an image, to the collection using the purpose built form.
+                        Alec's Record Collection is a fully responsive PHP web-app that displays a collection of
+                        records stored in a MySQL database. You can add a new record, including an image, to the
+                        collection
+                        using the purpose built form.
                     </p>
                     <h3>Languages</h3>
                     <ul class="language-list">
@@ -101,14 +180,19 @@
                     <div class="project-title">
                         <h2>Pleasure Gallery Site</h2>
                         <div class="project-icons">
-                            <a class="clickable-icon" target="_blank" href="https://github.com/alec-hamilton/pg-site"><i data-feather="github"></i></a>
+                            <a class="clickable-icon" target="_blank" href="https://github.com/alec-hamilton/pg-site"><i
+                                    data-feather="github"></i></a>
                         </div>
                     </div>
                     <div class="project-image">
                         <img src="images/pleasuregallery.png" alt="">
                     </div>
                     <p class="card-copy">
-                        Pleasure gallery site is a personal project completed in my free time outside of iO Academy. It is a replica of <a href="https://pleasuregallery.net">this wordpress site</a> which I had made prior to the course. I wanted to test my skills in HTML, CSS & JavaScript by making it from scratch.
+                        Pleasure gallery site is a personal project completed in my free time outside of iO Academy.
+                        It is a replica of <a href="https://pleasuregallery.net">this wordpress site</a> which I had
+                        made prior to the course. The site displays a piece of artwork cut up into 12 squares,
+                        each one links to a different SoundCloud mix. I wanted to test my skills in HTML, CSS & JavaScript
+                        by making it from scratch.
                     </p>
                     <h3>Languages</h3>
                     <ul class="language-list">
@@ -127,15 +211,21 @@
                     <div class="project-title">
                         <h2>WordRunner</h2>
                         <div class="project-icons">
-                            <a class="clickable-icon" target="_blank" href="https://github.com/alec-hamilton/Word-Runner"><i data-feather="github"></i></a>
-                            <a class="clickable-icon" target="_blank" href="https://dev.io-academy.uk/projects/2022-march/wordrunner/"><i data-feather="external-link"></i></a>
+                            <a class="clickable-icon" target="_blank"
+                               href="https://github.com/iO-Academy/2022-mar-word-finder"><i
+                                    data-feather="github"></i></a>
+                            <a class="clickable-icon" target="_blank"
+                               href="https://dev.io-academy.uk/projects/2022-march/wordrunner/"><i
+                                    data-feather="external-link"></i></a>
                         </div>
                     </div>
                     <div class="project-image">
                         <img src="images/wordrunner.png" alt="">
                     </div>
                     <p class="card-copy">
-                        WordRunner is a JavaScript word game. It fetches a collection of words from an API. The user is presented with a list of synonyms and has to guess the correct word in the time limit.
+                        WordRunner is a JavaScript word game. It fetches a collection of words from an API. The user
+                        is
+                        presented with a list of synonyms and has to guess the correct word in the time limit.
                     </p>
                     <h3>Languages</h3>
                     <ul class="language-list">
@@ -150,60 +240,6 @@
                         <li>- UI/UX</li>
                     </ul>
                 </div>
-                <div class="my-work-card">
-                    <div class="project-title">
-                        <h2>Scran Master</h2>
-                        <div class="project-icons">
-                            <a class="clickable-icon" target="_blank" href="https://github.com/alec-hamilton/scranmaster"><i data-feather="github"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-image">
-                        <img src="images/scranmaster.png" alt="">
-                    </div>
-                    <p class="card-copy">
-                        Scran Master is a React and Bootstrap based web-app for ordering takeaways online. It fetches Restaurant data from an API. You can add/remove items from your order as well as simulate placing it, where the server will respond with an estimated delivery time.
-                    </p>
-                    <h3>Languages / Libraries</h3>
-                    <ul class="language-list">
-                        <li>React</li>
-                        <li>JavaScript</li>
-                        <li>HTML</li>
-                        <li>Bootstrap</li>
-                    </ul>
-                    <h3>Competencies</h3>
-                    <ul class="competency-list">
-                        <li>- APIs</li>
-                        <li>- Libraries</li>
-                        <li>- Postman</li>
-                    </ul>
-                </div>
-                <div class="my-work-card">
-                    <div class="project-title">
-                        <h2>CarPe Diem</h2>
-                        <div class="project-icons">
-                            <a class="clickable-icon" target="_blank" href="https://github.com/alec-hamilton/carpe-diem"><i data-feather="github"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-image">
-                        <img src="images/carpe-diem.png" alt="">
-                    </div>
-                    <p class="card-copy">
-                        CarPe-Diem is an object-oriented PHP project, styled with SASS, that fetches and displays information about different cars from a MySQL database. The database is built and populated using a utility tool that fetches the data from an existing API.
-                    </p>
-                    <h3>Languages / Libraries</h3>
-                    <ul class="language-list">
-                        <li>PHP</li>
-                        <li>SASS</li>
-                        <li>SQL</li>
-                        <li>HTML</li>
-                    </ul>
-                    <h3>Competencies</h3>
-                    <ul class="competency-list">
-                        <li>- OOP</li>
-                        <li>- Unit testing</li>
-                        <li>- Mocking</li>
-                    </ul>
-                </div>
             </div>
         </section>
 
@@ -212,42 +248,47 @@
                 Get in touch
             </div>
             <p class="body-copy" id="contact-copy">
-                I'm looking for new opportunities to further my skills as a junior developer. Please get in touch, I'd love to hear from you.
+                I'm looking for new opportunities to further my skills as a junior developer. Please get in touch, I'd
+                love to hear from you.
             </p>
-            <button onclick="window.location.href='mailto:hamiltonalec@gmail.com,';" class="button">Say hello</button>
+            <button onclick="window.location.href='mailto:alechamilton.dev@gmail.com,';" class="button">Say hello
+            </button>
         </section>
 
         <footer>
             <div class="icon-footer">
-                <a class="clickable-icon-footer" target="_blank" href="https://github.com/alec-hamilton"><i data-feather="github"></i></a>
-                <a class="clickable-icon-footer" target="_blank" href="https://www.linkedin.com/in/alechamilton/"><i data-feather="linkedin"></i></a>
-                <a class="clickable-icon-footer" target="_blank" href="https://www.instagram.com/alechamilton0/"><i data-feather="instagram"></i></a>
+                <a class="clickable-icon-footer" target="_blank" href="https://github.com/alec-hamilton"><i
+                        data-feather="github"></i></a>
+                <a class="clickable-icon-footer" target="_blank" href="https://www.linkedin.com/in/alechamilton/"><i
+                        data-feather="linkedin"></i></a>
+                <a class="clickable-icon-footer" target="_blank" href="https://codepen.io/alechamilton"><i
+                        data-feather="codepen"></i></a>
             </div>
             <div class="footer-text">
-                <a href="https://github.com/alec-hamilton">Designed & built by Alec Hamilton</a>
+                <a href="https://github.com/alec-hamilton/alec-hamilton.github.io">Designed & built by Alec Hamilton</a>
             </div>
         </footer>
     </div>
 
     <div class="left-container">
         <div class="left-icons">
-            <a class="clickable-icon-footer" target="_blank" href="https://github.com/alec-hamilton"><i data-feather="github"></i></a>
-            <a class="clickable-icon-footer" target="_blank" href="https://www.linkedin.com/in/alechamilton/"><i data-feather="linkedin"></i></a>
-            <a class="clickable-icon-footer" target="_blank" href="https://www.instagram.com/alechamilton0/"><i data-feather="instagram"></i></a>
+            <a class="clickable-icon-footer" target="_blank" href="https://github.com/alec-hamilton"><i
+                    data-feather="github"></i></a>
+            <a class="clickable-icon-footer" target="_blank" href="https://www.linkedin.com/in/alechamilton/"><i
+                    data-feather="linkedin"></i></a>
+            <a class="clickable-icon-footer" target="_blank" href="https://codepen.io/alechamilton"><i
+                    data-feather="codepen"></i></a>
         </div>
         <div class="vertical-line">
         </div>
     </div>
 
     <div class="right-container">
-        <a href="mailto:hamiltonalec@gmail.com" class="right-email">hamiltonalec@gmail.com</a>
+        <a href="mailto:alechamilton.dev@gmail.com" class="right-email">alechamilton.dev@gmail.com</a>
         <div class="vertical-line">
         </div>
     </div>
 </div>
-<script>
-    feather.replace()
-</script>
 </body>
 
 </html>
