@@ -87,6 +87,7 @@ nav {
 .welcome-sub {
   color: #ffffff;
   font-size: 5.5vw;
+  margin-bottom: 1rem;
 }
 
 .button {
@@ -112,10 +113,6 @@ nav {
 
 .body-copy {
   line-height: 1.5rem;
-}
-
-.body-copy-container {
-  display: flex;
 }
 
 .about-container {
